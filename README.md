@@ -1,15 +1,39 @@
-# Estratégia de marketing 
-imagem do projeto
+# Estratégia para fidelização de clientes de uma Outlet
+![insiders-cluster.jpg](./images/insiders-cluster.jpg)
 
 # 1. Questão de negócio
+A empresa All in One Place (*fictícia*) é uma empresa Outlet Multimarcas, ou seja, ela comercializa produtos de segunda linha de várias marcas a um preço menor, atráves de um e-commerce.
 
+Em pouco mais de 1 ano de operação, o time de marketing percebeu que alguns clientes da sua base compram produtos mais caros, com alta frequência e acabam contribuindo com uma parcela significativa do faturamento da empresa.
+
+Baseado nessa percepção, o time de marketing pretende lançar um programa de fidelidade para os melhores clientes da base, chamado **Insiders**. Contudo, o time não as skills necessárias em análise de dados para eleger os participantes do programa.
+
+Por esse motivo, a equipe de marketing solicitou ao time de dados uma seleção de clientes elegíveis ao programa, usando técnicas avançadas de manipulação de dados.
 
 
 ## 1.1 Desafio
 
-Como Cientista de Dados, o meu objetivo é responder as seguintes perguntas:
+Como Cientista de Dados da All in One Place, o meu objetivo é determinar quais são os clientes elegíveis para participar do programa Insiders. Em posse dessa lista de clientes, o time de marketing poderá realizar um série de ações personalizadas ao grupo, de modo a aumentar o faturamento e frequência de compra.
 
-1. **questão de negócio**
+Como resultado para esse projeto, é esperado que eu entregue uma lista dos clientes elegíveis e um relatório respondendo as seguintes perguntas:
+
+1. **Quais são os clientes elegíveis para participar do programa Insiders?**
+
+2. **Quantos clientes farão parte do grupo?**
+
+3. **Quais as principais características desses clientes?**
+
+4. **Qual a porcentagem de contribuição do faturamento vinda desses clientes?**
+
+5. **Qual a expectativa de faturamento desse grupo para os próximos meses?**
+
+6. **Quais as condições para um cliente ser elegível ao programa?**
+
+7. **Quais as condições para um cliente ser removida dos Insiders?**
+
+8. **Qual a garantia que os clientes do programa Insiders são melhores que o restante da base?**
+
+9. **Quais ações o time de marketing pode realizar para aumentar o faturamento?**
 
 # 2. Premissas de negócio
 
@@ -41,7 +65,7 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 ![ciclo_crisp_ds.jpg](./images/ciclo_crisp_ds.jpg)
  
  **1 DESCRIÇÃO DOS DADOS**
-- Coleta dos dados <local da coleta>
+- Coleta dos dados [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 - Entendimento do significado de cada atributo da base de dados
 - Renomeação das colunas, entendimento da dimensão e tipo dos dados
 - Tratamento de dados nulos
@@ -82,7 +106,6 @@ A metodologia utilizada para resolver este problema é a [CRISP-DS](https://blog
 
 
 **9 PERFORMANCE DO MODELO NO NEGÓCIO**
-
 - Respostas das questões de negócio
 - Comparação dos resultados do (baseline) com o resultado do modelo escolhido
 - Tradução da performance do modelo em resultados financeiros
@@ -97,18 +120,18 @@ Quais ferramentas serão utilizadas no processo?
 - Git, GitHub
 
 ## 3.4 Dataset
-Para responder a pergunta do dono do problema, foi utilizado um *dataset* público disponível no [Kaggle](fonte de dados) com informações sobre a nome da empresa.
+Para responder a pergunta do dono do problema, foi utilizado um *dataset* público disponível no [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data) com informações sobre a nome da empresa.
 
 | Variável | Definição |
 | --- | --- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| InvoiceNo | Número de identificação único da transação |
+| StockCode | Código do item |
+| Description | Descrição do item |
+| Quantity | A quantidade de cada item comprado por transação |
+| InvoiceDate | Data da transação |
+| UnitPrice | Preço do produto por unidade |
+| CustomerId | Identificador único do cliente |
+| Country | O nome do país que o cliente reside |
 
 
 # 4. Mapa mental de hipóteses
@@ -167,12 +190,10 @@ conclusão
 Este foi o primeiro ciclo do método CRISP-DS para o problema da nome do problema, foi possível passar por todas as etapas de um projeto completo de Ciência de Dados e entregar valor ao negócio. 
 
 * O que pode ser feito no próximo ciclo?
-    -
-- listar o que será feito no próximo ciclo
 
 # 9. Referências
 
-- Este projeto é um desafio da [](citar a inspiração do desafio).
-- O conjunto de dados foi coletado no [Kaggle](fonte de dados).
+- Este projeto é um desafio da [ComunidadeDS](https://comunidadeds.com/).
+- O conjunto de dados foi coletado no [Kaggle][Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data) .
 
 
